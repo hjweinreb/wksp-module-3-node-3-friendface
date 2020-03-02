@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+<h2><%=foundUser.name%></h2>
+<h3><img class="user-face" src="<%=foundUser.avatarUrl%>" /></h3>
+<ol>
+  <li><%=foundUser.friends[0]%></li>
+  <li><%=foundUser.friends[1]%></li>
+  <li><%=foundUser.friends[2]%></li>
+  <li><%=foundUser.friends[3]%></li>
+</ol>
+<ul>
+  <% for( let i = 0; i < currentFriends.length; i++ ) { %>
+  <li>
+    <a href="/user/<%- currentFriends[i].id %>">
+      <img class="friend-face" src="<%=currentFriends[i].avatarUrl%>" />
+    </a>
+  </li>
+  <% } %>
+</ul>
+
+<%- include('../partials/footer') %>
