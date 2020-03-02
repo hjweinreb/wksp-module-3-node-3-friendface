@@ -1,21 +1,85 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap");
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,33 +89,50 @@ time, mark, audio, video {
   box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-ol, ul {
+ol,
+ul {
   margin-bottom: 1em; }
 
-h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif; }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif; }
 
 h1 {
   font-size: 36px; }
@@ -66,15 +147,20 @@ h3 {
 h4 {
   font-size: 20px; }
 
-p, li, a, blockquote, span {
-  font-family: 'Roboto Slab', serif;
+p,
+li,
+a,
+blockquote,
+span {
+  font-family: "Roboto Slab", serif;
   font-size: 17px;
   font-weight: 300;
   line-height: 1.5em; }
 
-code, codeblock {
+code,
+codeblock {
   background: #eaeaea;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 14px;
   padding: 0 4px; }
 
@@ -87,7 +173,31 @@ body {
   background: #fafafa;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: greenyellow; }
+
+.user-face {
+  max-height: 120px;
+  max-width: 120px;
+  border-radius: 60px;
+  margin-top: 10px; }
+
+.user-face:hover {
+  max-height: 140px;
+  max-width: 140px; }
+
+.form-style {
+  font-size: 40px;
+  border: solid black 2px;
+  padding-bottom: 10px; }
+
+.friend-face {
+  max-height: 40px;
+  max-width: 40px; }
+
+.site-title {
+  background-color: #65b265;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
 
 .main {
   flex: 1 0 auto; }
@@ -96,7 +206,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: slategray; }
     .main.four-oh-four .title {
       font-size: 96px; }
